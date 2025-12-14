@@ -1,27 +1,53 @@
-# Week 1 — MLflow Experiment Tracking & Model Registry
+# Week 1 — Linux Basic Questions
 
-## Goal
-Build a minimal end-to-end ML workflow and track experiments with **MLflow**:
-- Train and log **3 regression models**
-- Compare metrics across runs
-- Register the best model in the **MLflow Model Registry**
+This assignment covers fundamental Linux command-line operations including
+directory management, file manipulation, redirection, filtering, and basic dataset handling.
 
-## What I Built
-This week focuses on the fundamentals of MLOps:
-- reproducible training runs
-- consistent metric logging
-- model selection based on evaluation metrics
-- model versioning through a registry
+---
 
-## Repository Contents
-- `notebooks/` — experimentation notebook (training + MLflow logging)
-- `src/` — training script(s)
-- `screenshots/` — MLflow UI evidence (runs, metrics, registry)
+## 1. Create a folder and change directory
 
-## How to Run
-
-### 1) Create and activate a virtual environment (optional)
 ```bash
-python -m venv .venv
-# Windows (PowerShell)
-.venv\Scripts\Activate.ps1
+
+mkdir linux_basic
+cd linux_basic
+mkdir mlops
+cd mlops
+wget https://raw.githubusercontent.com/erkansirin78/datasets/master/Churn_Modelling.csv
+
+# Alternative:
+# curl -O https://raw.githubusercontent.com/erkansirin78/datasets/master/Churn_Modelling.csv
+
+ls /etc/*.conf
+
+echo "Hello! MLOps Bootcamp has started." > mlops.txt
+cat mlops.txt
+
+mkdir yellow
+cd yellow
+
+touch red.txt blue.txt
+
+echo "My Name is Red" > red.txt
+echo "My Name is Blue" > blue.txt
+
+cat red.txt >> blue.txt
+cat blue.txt >> red.txt
+
+cp red.txt ../red_copied.txt
+cp blue.txt ../blue_copied.txt
+
+# Install tree (Ubuntu/Debian)
+sudo apt-get update
+sudo apt-get install -y tree
+
+tree yellow
+
+mkdir -p ~/datasets
+wget -O ~/datasets/Wine.csv https://raw.githubusercontent.com/erkansirin78/datasets/master/Wine.csv
+
+# Print first 15 lines
+head -n 15 ~/datasets/Wine.csv
+
+# Filter rows where Alcohol > 14.0
+awk -F',' 'NR==1 || $1 > 14.0' ~/datasets/Wine.csv
