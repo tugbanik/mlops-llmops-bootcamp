@@ -20,3 +20,5 @@ mlartifacts/
 data/
 *.csv
 *.parquet
+# MLflow artifacts
+mlflow.db
