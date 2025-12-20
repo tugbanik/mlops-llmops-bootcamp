@@ -1,11 +1,17 @@
 # Week 5 — FastAPI Sum API
 
-This project implements a minimal REST API using **FastAPI** and **Uvicorn**.
+This project is a minimal FastAPI application that receives two integers via query parameters
+and returns their sum.
 
-## Goal
+## Requirements
+- Python 3.10+ recommended
+- fastapi
+- uvicorn
 
-Create an API endpoint that:
-- Accepts two integers as query parameters
-- Returns their sum as a response
+## Setup (Windows / PowerShell)
 
-## Endpoint
+Create and activate a virtual environment:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
