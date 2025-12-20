@@ -15,3 +15,9 @@ Create and activate a virtual environment:
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+
+## Example Response
+Below is an example response from the API when calling:
+
+
+![FastAPI Sum Result](screenshots/fastapi_sum_result.png)
