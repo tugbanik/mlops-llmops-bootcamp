@@ -20,5 +20,15 @@ mlartifacts/
 data/
 *.csv
 *.parquet
+
 # MLflow artifacts
 mlflow.db
+
+# Local DB files
+*.db
+*.sqlite
+*.sqlite3
+
+# Env
+.env
+.env.*
