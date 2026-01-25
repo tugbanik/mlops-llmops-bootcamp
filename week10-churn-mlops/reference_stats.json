@@ -1,0 +1,64 @@
+{
+  "numerical": {
+    "CreditScore": {
+      "mean": 650.7525,
+      "std": 96.59643162444108,
+      "min": 350.0,
+      "max": 850.0
+    },
+    "Age": {
+      "mean": 38.946625,
+      "std": 10.526876459822974,
+      "min": 18.0,
+      "max": 92.0
+    },
+    "Tenure": {
+      "mean": 5.016625,
+      "std": 2.896790902717481,
+      "min": 0.0,
+      "max": 10.0
+    },
+    "Balance": {
+      "mean": 76381.20749875,
+      "std": 62302.05359693521,
+      "min": 0.0,
+      "max": 238387.56
+    },
+    "NumOfProducts": {
+      "mean": 1.5295,
+      "std": 0.5817405373159023,
+      "min": 1.0,
+      "max": 4.0
+    },
+    "EstimatedSalary": {
+      "mean": 99730.81158125,
+      "std": 57335.11653961207,
+      "min": 11.58,
+      "max": 199992.48
+    }
+  },
+  "categorical": {
+    "Geography": {
+      "categories": [
+        "France",
+        "Germany",
+        "Spain"
+      ],
+      "proportions": {
+        "France": 0.499125,
+        "Germany": 0.250625,
+        "Spain": 0.25025
+      }
+    },
+    "Gender": {
+      "categories": [
+        "Male",
+        "Female"
+      ],
+      "proportions": {
+        "Male": 0.548375,
+        "Female": 0.451625
+      }
+    }
+  }
+}
