@@ -1,34 +1,59 @@
+# ======================
 # Python
+# ======================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
 .venv/
 venv/
-.env
 
+# ======================
+# Environment variables
+# ======================
+.env
+.env.*
+
+# ======================
 # Jupyter
+# ======================
 .ipynb_checkpoints/
 
+# ======================
 # OS / IDE
+# ======================
 .DS_Store
 .vscode/
 
-# MLflow
-mlruns/
-mlartifacts/
-
-# Data
-data/
-*.csv
-*.parquet
-
-# MLflow artifacts
-mlflow.db
-
-# Local DB files
+# ======================
+# Databases (local only)
+# ======================
 *.db
 *.sqlite
 *.sqlite3
 
-# Env
-.env
-.env.*
+# ======================
+# MLflow (local tracking)
+# ======================
+mlruns/
+mlartifacts/
+mlflow.db
+
+# ======================
+# Large datasets (do NOT track)
+# ======================
+*.csv
+*.parquet
+*.zip
+
+# ======================
+# Docker local artifacts
+# ======================
+docker-data/
+**/.docker/
+
+# ======================
+# Logs
+# ======================
+*.log
