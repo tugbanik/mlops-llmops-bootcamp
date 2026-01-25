@@ -81,16 +81,30 @@ head -n 15 ~/datasets/Wine.csv
 ### 11. Filter dataset using awk
 Filter rows where Alcohol content is greater than 14.0:
 awk -F',' 'NR==1 || $1 > 14.0' ~/datasets/Wine.csv
+
 ---
 ### Summary
 In this assignment, the following Linux concepts were practiced:
+
 Directory and file management
+
 File creation and content manipulation
+
 Input/output redirection (>, >>)
+
 Dataset downloading via terminal
+
 Basic data inspection using head
+
 Data filtering using awk
+
 Understanding terminal-based data workflows
+
 This week provided a strong foundation for working comfortably in Linux environments, which is essential for MLOps and production-grade systems.
 ---
+#Author
+
+** Tuğba Niksarlı **
+MLOps & LLMOps Bootcamp — Week 1
+
 
