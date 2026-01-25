@@ -58,97 +58,82 @@ mlops-llmops-bootcamp/
 │
 └── README.md
 
+## Week Highlights
 
-Week Highlights
-Week 1 – Linux Basics
+---
 
-Linux filesystem and terminal fundamentals
+## 🔹 Week 1 – Linux Basics
 
-Basic shell commands and directory operations
+- Linux filesystem and terminal fundamentals  
+- Basic shell commands and directory operations  
 
-Week 5 – FastAPI Sum API
+---
 
-Simple REST API using FastAPI
+## 🔹 Week 5 – FastAPI Sum API
 
-Endpoint testing and basic request/response handling
+- Simple REST API using FastAPI  
+- Endpoint testing and basic request/response handling  
 
-Week 6 – Taxi Trip API
+---
 
-FastAPI backend with JWT authentication
+## 🔹 Week 6 – Taxi Trip API
 
-PostgreSQL integration using Docker Compose
+- FastAPI backend with JWT authentication  
+- PostgreSQL integration using Docker Compose  
+- User registration and login  
+- Protected endpoints  
+- Taxi trip creation and listing  
+- Swagger UI testing  
+- Screenshot-based proof of functionality  
 
-User registration and login
+📁 Detailed documentation:  
+👉 [week6-taxi-trip-api/README.md](./week6-taxi-trip-api/README.md)
 
-Protected endpoints
+---
 
-Taxi trip creation and listing
+## 🔹 Week 7 – FastAPI + ML / LLM + Database
 
-Swagger UI testing
+- Machine learning and LLM-based endpoints  
+- SQLite database persistence  
+- Prediction results stored in database  
+- Swagger UI testing and proof screenshots  
 
-Screenshot-based proof of functionality
+📁 Detailed documentation:  
+👉 [week7-fastapi-ml-llm-db/README.md](./week7-fastapi-ml-llm-db/README.md)
 
-📁 Detailed documentation:
-👉 week6-taxi-trip-api/README.md
+---
 
-Week 7 – FastAPI + ML / LLM + Database
+## 🔹 Week 10 – Customer Churn Prediction (MLOps Pipeline)
 
-Machine learning and LLM-based endpoints
+- End-to-end MLOps pipeline implementation  
+- Scikit-learn pipeline for preprocessing and modeling  
+- Numerical and categorical drift detection  
+- PostgreSQL-based prediction logging  
+- FastAPI-based inference service  
+- Dockerized deployment with Docker Compose  
+- Screenshot-based validation (Swagger, prediction, drift, database)
 
-SQLite database persistence
+📁 Detailed documentation:  
+👉 [week10-churn-mlops/README.md](./week10-churn-mlops/README.md)
 
-Prediction results stored in database
+---
 
-Swagger UI testing and proof screenshots
-
-📁 Detailed documentation:
-👉 week7-fastapi-ml-llm-db/README.md
-
-Week 10 – Customer Churn Prediction (MLOps Pipeline)
-
-End-to-end MLOps pipeline implementation
-
-Scikit-learn pipeline for preprocessing and modeling
-
-Numerical and categorical drift detection
-
-PostgreSQL-based prediction logging
-
-FastAPI-based inference service
-
-Dockerized deployment with Docker Compose
-
-Screenshot-based validation (Swagger, prediction, drift, DB)
-
-📁 Detailed documentation:
-👉 week10-churn-mlops/README.md
 
 Tech Stack (Overall)
 
 Python
-
 FastAPI
-
 SQLAlchemy / SQLModel
-
 PostgreSQL & SQLite
-
 Docker & Docker Compose
-
 JWT Authentication
-
 Machine Learning Pipelines
-
 Data Drift Detection
-
 Swagger / OpenAPI
 
 Notes
-
 Each week is isolated in its own folder.
-
 Screenshots are included where required as proof of execution.
-
 Detailed explanations are provided inside each week's README.md.
 
 Author
