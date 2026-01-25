@@ -38,7 +38,7 @@ Target variable:
 ---
 
 ## Project Structure
-
+```text
 week10-churn-mlops/
 ├── app/
 │ ├── main.py # FastAPI application
@@ -57,7 +57,7 @@ week10-churn-mlops/
 ├── docker-compose.yml
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
@@ -139,6 +139,7 @@ Database operations are handled using **SQLModel**.
 ## FastAPI Endpoints
 
 Base URL:
+
 http://localhost:8502
 
 
@@ -160,17 +161,19 @@ http://localhost:8502
   Returns drift summary
 
 Swagger UI:
+```ardunio
 http://localhost:8502/docs
-
-
+```
 ---
 
 ## Running the Project
 
 ```bash
 docker compose up --build
+```
 After startup, the API becomes available via Swagger UI.
 
+```bash
 Example Prediction Request
 {
   "CreditScore": 619,
@@ -184,33 +187,53 @@ Example Prediction Request
   "IsActiveMember": 1,
   "EstimatedSalary": 101348.88
 }
-Screenshots
+```
+
+## Screenshots
 Project execution evidence is available below:
 
-Swagger UI
-📷 screenshots/01_swagger.jpg
-Prediction response
-📷 screenshots/02_predict.jpg
-Drift detection output
-📷 screenshots/03_drift.jpg
-PostgreSQL prediction records
-📷 screenshots/04_db.jpg
+## Screenshots
 
-Technologies Used
-Python
-scikit-learn
-FastAPI
-SQLModel
-PostgreSQL
-Docker & Docker Compose
-WSL2
+Project execution evidence is provided below.
 
-Summary
+### Swagger UI
+![Swagger UI](screenshots/01_swagger.jpg)
+
+### Prediction Response
+![Prediction Response](screenshots/02_predict.jpg)
+
+### Drift Detection Output
+![Drift Detection](screenshots/03_drift.jpg)
+
+### PostgreSQL Prediction Records
+![Database Records](screenshots/04_db.jpg)
+
+---
+### Technologies Used
+* Python
+* scikit-learn
+* FastAPI
+* SQLModel
+* PostgreSQL
+* Docker & Docker Compose
+* WSL2
+---
+## Summary
+
 This project demonstrates a real-world MLOps workflow, including:
-Modular ML pipeline design
-Automated drift monitoring
-Persistent prediction logging
-API-driven inference
-Fully containerized deployment
+* Modular ML pipeline design
+* Automated drift monitoring
+* Persistent prediction logging
+* API-driven inference
+* Fully containerized deployment
 
 The system is reproducible, scalable, and suitable for production-style ML monitoring scenarios.
+
+---
+## Author
+
+**Tuğba Niksarlı**
+
+**MLOps & LLMOps Bootcamp — Week 10**
+
+
