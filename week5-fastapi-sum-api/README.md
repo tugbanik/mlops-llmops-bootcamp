@@ -88,9 +88,9 @@ http://127.0.0.1:8000/sum?a=5&b=7
 ## Screenshot
 
 Below is an example response captured from Swagger UI:
-
-![FastAPI Sum Result](screenshots/fastapi_sum_result.png)
-
+| Screenshot | Description |
+|-----------|-------------|
+| `fastapi_sum_result.png` | Successful API response for sum calculation |
 
 ---
 
