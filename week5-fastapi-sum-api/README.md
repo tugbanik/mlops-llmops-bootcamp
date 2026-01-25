@@ -39,23 +39,22 @@ week5-fastapi-sum-api/
 
 ## Installation & Setup (Windows / PowerShell)
 ### 1. Create virtual environment
- 
+```bash
 python -m venv .venv
-
+```
 ### 2. Activate environment
-
+```bash
 .\.venv\Scripts\Activate.ps1
-
+```
 ### 3. Install dependencies
-
+```bash
 pip install -r requirements.txt
-
+```
 ### Running the API
 Start the FastAPI server with:
-
+```bash
 uvicorn main:app --reload
-
-
+```
 The application will run at:
 
 http://127.0.0.1:8000
@@ -71,9 +70,10 @@ Calculates the sum of two integers.
 
 ### Query Parameters
 
-### Parameter 	Type	   Description
-       a	       int	   First number
-       b	       int     Second number
+| Parameter | Type | Description |
+|----------|------|-------------|
+| a | int | First number |
+| b | int | Second number |
 
 ### Example Request
 
