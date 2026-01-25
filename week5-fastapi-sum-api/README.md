@@ -85,9 +85,14 @@ http://127.0.0.1:8000/sum?a=5&b=7
   "result": 12
 }
 
-### Screenshot
+## Screenshot
 
 Below is an example response captured from Swagger UI:
+
+![FastAPI Sum Result](screenshots/fastapi_sum_result.png)
+
+
+---
 
 ## Summary
 
@@ -105,7 +110,10 @@ In this assignment, the following concepts were practiced:
 
 This project provides the foundation for later weeks where authentication, databases, and machine learning models are integrated into FastAPI services.
 
+---
+
 ## Author
 
-** Tuğba Niksarlı ** 
-* MLOps & LLMOps Bootcamp — Week 5 * 
+**Tuğba Niksarlı**
+
+**MLOps & LLMOps Bootcamp Participant**
