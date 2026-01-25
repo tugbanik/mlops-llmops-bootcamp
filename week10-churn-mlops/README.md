@@ -188,28 +188,20 @@ Example Prediction Request
   "EstimatedSalary": 101348.88
 }
 ```
-
-## Screenshots
-Project execution evidence is available below:
-
+---
 ## Screenshots
 
-Project execution evidence is provided below.
+The following screenshots demonstrate successful execution of the project.
 
-### Swagger UI
-![Swagger UI](screenshots/01_swagger.jpg)
-
-### Prediction Response
-![Prediction Response](screenshots/02_predict.jpg)
-
-### Drift Detection Output
-![Drift Detection](screenshots/03_drift.jpg)
-
-### PostgreSQL Prediction Records
-![Database Records](screenshots/04_db.jpg)
+| Screenshot | Description |
+|-----------|-------------|
+| `01_swagger.jpg` | Swagger UI interface |
+| `02_predict.jpg` | Prediction endpoint response |
+| `03_drift.jpg` | Drift detection output |
+| `04_db.jpg` | PostgreSQL prediction records |
 
 ---
-### Technologies Used
+## Technologies Used
 * Python
 * scikit-learn
 * FastAPI
