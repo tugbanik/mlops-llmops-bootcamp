@@ -36,17 +36,20 @@ cd mlops
 wget https://raw.githubusercontent.com/erkansirin78/datasets/master/Churn_Modelling.csv
 
 Alternative method: 
-
+```bash
 curl -O https://raw.githubusercontent.com/erkansirin78/datasets/master/Churn_Modelling.csv
-
+```
 ### 3. List configuration files
+```bash
 ls /etc/*.conf
-
+```
 ### 4. Create and display text file
+```bash
 echo "Hello! MLOps Bootcamp has started." > mlops.txt
 cat mlops.txt
-
+```
 ### 5. Create files and write content
+```bash
 mkdir yellow
 cd yellow
 
@@ -54,34 +57,40 @@ touch red.txt blue.txt
 
 echo "My Name is Red" > red.txt
 echo "My Name is Blue" > blue.txt
-
+```
 ### 6. Append file contents
+```bash
 cat red.txt >> blue.txt
 cat blue.txt >> red.txt
-
+```
 ### 7. Copy files
+```bash
 cp red.txt ../red_copied.txt
 cp blue.txt ../blue_copied.txt
-
+```
 ### 8. Install and use tree command
+```bash
 sudo apt-get update
 sudo apt-get install -y tree
 
 Display directory structure:
 tree yellow
-
+```
 ### 9. Download another dataset
+```bash
 mkdir -p ~/datasets
 wget -O ~/datasets/Wine.csv https://raw.githubusercontent.com/erkansirin78/datasets/master/Wine.csv
-
+```
 ### 10. Inspect dataset
+```bash
 Display first 15 rows:
 head -n 15 ~/datasets/Wine.csv
-
+```
 ### 11. Filter dataset using awk
 Filter rows where Alcohol content is greater than 14.0:
+```bash
 awk -F',' 'NR==1 || $1 > 14.0' ~/datasets/Wine.csv
-
+```
 ---
 ### Summary
 In this assignment, the following Linux concepts were practiced:
