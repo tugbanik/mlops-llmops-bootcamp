@@ -86,19 +86,19 @@ awk -F',' 'NR==1 || $1 > 14.0' ~/datasets/Wine.csv
 ### Summary
 In this assignment, the following Linux concepts were practiced:
 
-Directory and file management
+* Directory and file management
 
-File creation and content manipulation
+* File creation and content manipulation
 
-Input/output redirection (>, >>)
+* Input/output redirection (>, >>)
 
-Dataset downloading via terminal
+* Dataset downloading via terminal
 
-Basic data inspection using head
+* Basic data inspection using head
 
-Data filtering using awk
+* Data filtering using awk
 
-Understanding terminal-based data workflows
+* Understanding terminal-based data workflows
 
 This week provided a strong foundation for working comfortably in Linux environments, which is essential for MLOps and production-grade systems.
 
