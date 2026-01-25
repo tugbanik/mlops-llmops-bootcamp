@@ -1,7 +1,8 @@
 # MLOps & LLMOps Bootcamp
 
-This repository contains my weekly assignments and projects developed during the **MLOps & LLMOps Bootcamp**.  
-Each folder corresponds to a specific week and focuses on a particular MLOps / backend / ML system concept.
+This repository contains my weekly assignments and projects developed during the **MLOps & LLMOps Bootcamp**.
+
+Each folder represents a weekly milestone focusing on MLOps, backend development, machine learning systems, and production-oriented workflows.
 
 ---
 
@@ -17,129 +18,118 @@ mlops-llmops-bootcamp/
 │   └── Simple FastAPI application with basic endpoint testing
 │
 ├── week6-taxi-trip-api/
-│   ├── app/
-│   │   ├── auth.py
-│   │   ├── db.py
-│   │   ├── deps.py
-│   │   ├── main.py
-│   │   ├── models.py
-│   │   └── schemas.py
-│   ├── screenshots/
-│   │   ├── 01_register.png
-│   │   ├── 02_login.png
-│   │   ├── 03_create_trip.png
-│   │   └── 04_list_trips.png
-│   ├── docker-compose.yml
-│   ├── requirements.txt
-│   └── README.md
+│   ├── FastAPI backend with authentication and PostgreSQL
+│   └── Docker-based deployment with execution screenshots
 │
 ├── week7-fastapi-ml-llm-db/
-│   └── FastAPI + ML/LLM endpoints with database persistence
+│   └── FastAPI services with ML / LLM inference and database persistence
 │
 ├── week10-churn-mlops/
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── models.py
-│   │   ├── database.py
-│   │   ├── drift_detection.py
-│   │   └── ml_pipeline.py
-│   ├── data/
-│   │   ├── train_model.py
-│   │   └── reference_stats.json
-│   ├── screenshots/
-│   │   ├── 01_swagger.jpg
-│   │   ├── 02_predict.jpg
-│   │   ├── 03_drift.jpg
-│   │   └── 04_db.jpg
-│   ├── Dockerfile
-│   ├── docker-compose.yml
-│   ├── requirements.txt
-│   └── README.md
+│   └── End-to-end MLOps pipeline with drift detection and monitoring
 │
 └── README.md
-
-## Week Highlights
-
+```
 ---
+# Weekly Overview
 
-### Week 1 — Linux Basics
+## Week 1 — Linux Basics
 
-Linux terminal and filesystem fundamentals.
+Focus on Linux fundamentals and command-line usage.
 
-- Directory and file operations  
-- Basic shell commands  
-- Command-line workflow familiarity  
+File and directory operations
 
----
+Core shell commands
 
-### Week 5 — FastAPI Sum API
+Terminal-based workflow understanding
 
-Introduction to backend development with FastAPI.
+## Week 5 — FastAPI Sum API
 
-- Simple REST API structure  
-- Request–response handling  
-- Endpoint testing with Swagger UI  
+Introduction to backend service development using FastAPI.
 
----
+REST API structure
 
-### Week 6 — Taxi Trip API
+Request and response handling
 
-Backend system with authentication and database integration.
+Swagger UI testing
 
-- JWT-based authentication  
-- PostgreSQL with Docker Compose  
-- User registration and login  
-- Protected endpoints  
-- Taxi trip creation and listing  
-- Swagger UI validation  
-- Screenshot-based proof of execution  
+## Week 6 — Taxi Trip API
 
----
+Backend system with authentication and relational database integration.
 
-### Week 7 — FastAPI + ML / LLM + Database
+JWT-based authentication
 
-Machine learning and LLM inference services with persistence.
+PostgreSQL integration
 
-- ML and LLM-based prediction endpoints  
-- Database-backed result storage  
-- API-level validation  
-- Swagger UI testing  
-- Execution screenshots  
+Docker Compose orchestration
 
----
+Protected API endpoints
 
-### Week 10 — Customer Churn Prediction (MLOps Pipeline)
+Swagger UI validation
+
+Screenshot-based execution proof
+
+## Week 7 — FastAPI + ML / LLM + Database
+
+Machine learning and language model inference services.
+
+ML and LLM-based prediction endpoints
+
+Database-backed prediction storage
+
+API-level validation
+
+Swagger UI testing
+
+Execution screenshots
+
+## Week 10 — Customer Churn Prediction (MLOps Pipeline)
 
 End-to-end MLOps pipeline implementation.
 
-- Scikit-learn pipeline for preprocessing and modeling  
-- Numerical and categorical drift detection  
-- PostgreSQL-based prediction logging  
-- FastAPI inference service  
-- Dockerized deployment with Docker Compose  
-- Operational validation via screenshots  
+Scikit-learn pipeline for preprocessing and modeling
 
----
+Numerical and categorical drift detection
 
+Reference statistics generation
 
+PostgreSQL-based prediction logging
 
-Tech Stack (Overall)
+FastAPI inference service
+
+Dockerized deployment with Docker Compose
+
+Operational validation via screenshots
+
+## Technology Stack
 
 Python
+
 FastAPI
+
 SQLAlchemy / SQLModel
+
 PostgreSQL & SQLite
+
 Docker & Docker Compose
+
 JWT Authentication
+
 Machine Learning Pipelines
+
 Data Drift Detection
+
 Swagger / OpenAPI
 
-Notes
-Each week is isolated in its own folder.
-Screenshots are included where required as proof of execution.
-Detailed explanations are provided inside each week's README.md.
+## Notes
 
-Author
-Tuğba Niksarlı
-MLOps & LLMOps Bootcamp Participant
+Each week is isolated in its own directory.
+
+Screenshots are included where required as proof of execution.
+
+Detailed technical explanations are provided inside each week’s README.md.
+
+## Author
+
+**Tuğba Niksarlı**
+
+**MLOps & LLMOps Bootcamp Participant**
