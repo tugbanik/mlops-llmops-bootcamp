@@ -115,19 +115,20 @@ Swagger UI is available at:
 http://127.0.0.1:8000/docs
 
 All endpoints can be tested interactively through Swagger.
+
 ---
 
 ## Screenshots
 
-Screenshots below demonstrate successful execution of the API workflow:
+The following screenshots demonstrate successful execution of the Taxi Trip API.
 
-* User registration
+| Screenshot | Description |
+|-----------|-------------|
+| `01_register.png` | User registration endpoint |
+| `02_login.png` | User login and JWT token generation |
+| `03_create_trip.png` | Create taxi trip (authenticated request) |
+| `04_list_trips.png` | List taxi trips endpoint |
 
-* User login and JWT token generation
-
-* Creating taxi trip records
-
-* Retrieving stored trip data
 ---
 # Summary
 
