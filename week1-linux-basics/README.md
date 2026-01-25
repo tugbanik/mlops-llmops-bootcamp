@@ -101,10 +101,11 @@ Data filtering using awk
 Understanding terminal-based data workflows
 
 This week provided a strong foundation for working comfortably in Linux environments, which is essential for MLOps and production-grade systems.
+
 ---
-#Author
 
-** Tuğba Niksarlı **
-MLOps & LLMOps Bootcamp — Week 1
+## Author
 
+**Tuğba Niksarlı**
 
+**MLOps & LLMOps Bootcamp Participant**
