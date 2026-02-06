@@ -1,15 +1,17 @@
 # Bootcamp MVP – Daily Summary
-- Generated at: **2026-02-04 22:09 UTC**
+- Generated at: **2026-02-06 18:51 UTC**
 
 ## Usage
-- Total interactions: **3**
-- Total feedback: **4**
+- Total interactions: **27**
+- Total feedback: **17**
 
 ## Feedback Quality (Statistical)
-- Average rating: **4.25** (min=3, max=5)
-- Positive feedback rate (rating ≥ 4): **75.00%** with 95% CI (Wilson): **[30.06%, 95.44%]**
+- Average rating: **4.00** (min=2, max=5)
+- Positive feedback rate (rating ≥ 4): **70.59%** with 95% CI (Wilson): **[46.87%, 86.72%]**
 
 ## Top Questions
-- (1) Otizm spektrumunda bir çocukla geçiş zamanlarını kolaylaştırmak için 3 öneri ver.
-- (1) Duyusal hassasiyeti olan çocuk için sınıfta uygulanabilecek sakinleşme stratejileri neler?
-- (1) Dikkatini toplamakta zorlanan bir çocuk için 10 dakikalık ev rutini öner.
+- (6) Duyusal hassasiyeti olan bir çocuk sınıfta nasıl sakinleştirilebilir?
+- (5) Öğretmen-veli iletişimi için haftalık ilerleme mesajı örneği yaz
+- (2) Otizm spektrumunda bir çocukta rutin bozulunca öfke artıyor, nasıl geçişleri yumuşatabilirim?
+- (2) Otizm spektrumunda bir çocukla geçiş zamanlarını kolaylaştırmak için öneri ver
+- (1) Öğretmen için sınıf içi destek planını (accommodations) tek sayfa özetle

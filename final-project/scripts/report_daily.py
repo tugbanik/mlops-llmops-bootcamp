@@ -5,7 +5,7 @@ import sqlite3
 from pathlib import Path
 from datetime import datetime, timezone
 
-DB_PATH = Path(__file__).resolve().parents[1] / "app.db"
+DB_PATH = Path(__file__).resolve().parents[1] / "data/app.db"
 REPORT_PATH = Path(__file__).resolve().parents[1] / "reports" / "summary.md"
 
 

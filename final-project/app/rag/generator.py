@@ -1,38 +1,32 @@
 from __future__ import annotations
 from typing import List
 
-# retriever'daki dataclass'ı import ediyorsan kalsın; şart değil
-# from app.rag.retriever import RetrievedDoc
-
 
 def generate_answer(question: str, label: str, docs: List[object]) -> str:
     """
     MVP generator:
-    - docs içinden en iyi 2 parçayı al
-    - label'a göre kısa şablon öneri üret
-    - kaynak snippet'larını ekle
-
-    Not: RetrieverDoc alan adı 'text' değilse 'content' kullanıyoruz.
+    - docs içinden en iyi 2 parçayı al (retriever zaten sorted döndürüyor varsayıyoruz)
+    - label'a göre kısa şablon üret
+    - administrative ise örnek haftalık mesaj ekle
+    - kaynak snippet + skor ekle
     """
 
     picked = docs[:2] if docs else []
 
     sources = []
     for d in picked:
-        # doc_id / score bekliyoruz
         doc_id = getattr(d, "doc_id", "unknown")
         score = float(getattr(d, "score", 0.0))
 
-        # !!! kritik fix: retriever doc'u 'content' alanı ile geliyor
         content = getattr(d, "content", None)
         if content is None:
-            # güvenlik için: bazen 'chunk' diye yazmış olabilirsin
             content = getattr(d, "chunk", "")
 
         snippet = str(content or "").strip().replace("\n", " ")
         snippet = snippet[:140] + ("..." if len(snippet) > 140 else "")
         sources.append(f"- ({doc_id}, score={score:.3f}) {snippet}")
 
+    # plan (label bazlı)
     if label == "support":
         plan = (
             "Öneri planı (destek):\n"
@@ -56,16 +50,30 @@ def generate_answer(question: str, label: str, docs: List[object]) -> str:
             "3) Sakin köşe + kısa hareket (germe/yürüme).\n"
         )
     else:
+        # administrative veya diğerleri buraya düşsün
         plan = (
             "Öneri planı (idari):\n"
             "1) Kısa-nezih iletişim taslağı.\n"
             "2) Ölçülebilir BEP hedefi (davranış/koşul/kriter).\n"
         )
 
+    # administrative için ekstra çıktı
+    extra = ""
+    if label == "administrative":
+        extra = (
+            "\nÖrnek haftalık mesaj:\n"
+            "Merhaba,\n"
+            "Bu hafta [davranış/hedef] alanında [kısa ölçülebilir ilerleme] gözlemledik.\n"
+            "Etkili olan destek: [görsel ipucu/zamanlayıcı/pekiştireç].\n"
+            "Önümüzdeki hafta hedefimiz: [tek hedef].\n"
+            "Saygılarımla.\n"
+        )
+
     answer = (
         f"Soru: {question}\n"
         f"Etiket (ML tahmini): {label}\n\n"
-        f"{plan}\n"
+        f"{plan}"
+        f"{extra}\n"
         "İlgili doküman parçaları:\n"
         + ("\n".join(sources) if sources else "- (kaynak bulunamadı)")
     )
