@@ -1,0 +1,61 @@
+@"
+# ======================
+# Python
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.venv/
+venv/
+
+# ======================
+# Environment variables
+# ======================
+.env
+.env.*
+
+# ======================
+# Jupyter
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# OS / IDE
+# ======================
+.DS_Store
+.vscode/
+.idea/
+
+# ======================
+# Databases (local only)
+# ======================
+*.db
+*.sqlite
+*.sqlite3
+
+# ======================
+# MLflow (local tracking)
+# ======================
+mlruns/
+mlartifacts/
+mlflow.db
+
+# ======================
+# Large datasets (do NOT track)
+# ======================
+*.parquet
+*.zip
+
+# ======================
+# Docker local artifacts
+# ======================
+docker-data/
+**/.docker/
+
+# ======================
+# Logs
+# ======================
+*.log
+"@ | Set-Content -Encoding UTF8 .gitignore
