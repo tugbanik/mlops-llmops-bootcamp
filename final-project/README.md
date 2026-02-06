@@ -81,6 +81,27 @@ This approach is aligned with production practices where **direct DB shell acces
 
 ---
 
+## 📊 Reporting & Monitoring
+
+The project includes a lightweight reporting layer to monitor system usage and output quality.
+
+- `scripts/report_daily.py`  
+  Reads interaction and feedback data from the SQLite database and generates a daily summary report.
+
+- `reports/summary.md`  
+  Automatically generated markdown report including:
+  - total number of interactions
+  - total feedback count
+  - average user rating
+  - positive feedback rate (rating ≥ 4)
+  - Wilson confidence interval (small-sample aware)
+  - most frequent user questions
+
+This component demonstrates basic **post-inference statistical monitoring**, rather than offline model accuracy evaluation.
+
+
+
+---
 ## 🐳 Running the Project
 
 ```bash
