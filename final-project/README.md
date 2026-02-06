@@ -118,7 +118,7 @@ External LLM APIs were intentionally not used to keep the MVP offline and reprod
 
 Local database files are intentionally ignored:
 ```bash 
-bash*.db 
+*.db 
 ```
 
 🚀 GitHub Push
