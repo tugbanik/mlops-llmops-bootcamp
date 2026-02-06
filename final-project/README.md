@@ -127,34 +127,3 @@ git add final-project
 git commit -m "Update README: add DB validation strategy"
 git push origin main
 ```
-
-``` yaml
----
-
-## ✅ `.gitignore` KONUSU (İÇİN RAHAT OLSUN)
-
-Şunu çok net söyleyeyim:
-
-- Gönderdiğin `.gitignore` **çok iyi**
-- Akademik + MLOps açısından **doğru**
-- DB, log, venv, mlruns vs. **olması gereken şekilde ignore ediliyor**
-
-Yani:
-> ❌ bozmadın  
-> ✅ aksine profesyonel hale getirdin  
-
-Sadece **değiştiği için commit’e girecek**, o kadar.
-
----
-
-## 🔧 ŞİMDİ YAPACAĞIN ADIMLAR (NET)
-
-1. **README’yi yukarıdakiyle birebir değiştir**
-2. Terminal:
-
-```bash
-git status
-git add final-project/README.md .gitignore
-git commit -m "Fix README formatting and add DB validation strategy"
-git push origin main
-``` 
