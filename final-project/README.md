@@ -94,34 +94,34 @@ http://localhost:8000/docs
 Health check:
 http://localhost:8000/health
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 This system does not provide medical or clinical advice.
 For urgent or critical situations, professional support should be consulted.
 
-📌 Bootcamp Context
+## 📌 Bootcamp Context
 This project demonstrates:
 
-API design
+- API design
 
-ML inference integration
+- ML inference integration
 
-RAG-style retrieval
+- RAG-style retrieval
 
-Database persistence
+- Database persistence
 
-Dockerized deployment
+- Dockerized deployment
 
-External LLM APIs were intentionally not used to keep the MVP offline and reproducible.
+- External LLM APIs were intentionally not used to keep the MVP offline and reproducible.
 
-🧾 .gitignore Note
+## 🧾 .gitignore Note
 
 Local database files are intentionally ignored:
-```bash 
+```
 *.db 
 ```
 
-🚀 GitHub Push
+## 🚀 GitHub Push
 ```bash
 git add final-project
 git commit -m "Update README: add DB validation strategy"
