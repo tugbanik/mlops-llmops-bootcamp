@@ -10,7 +10,7 @@ Design a safety-aware, modular support assistant system that provides structured
 ## High-Level Architecture
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[User] --> B[API Layer]
     B --> C[Classification]
     C --> D[Guideline Retrieval]
