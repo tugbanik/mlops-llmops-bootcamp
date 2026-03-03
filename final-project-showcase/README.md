@@ -7,7 +7,7 @@ Implementation details and code are maintained in a private repository.
 ## Objective
 Design a safety-aware, modular support assistant system that provides structured, non-clinical recommendations for special education contexts.
 
-## High-Level Architecture
+## Architecture
 
 ```mermaid
 flowchart LR
