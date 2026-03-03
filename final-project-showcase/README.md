@@ -1,13 +1,21 @@
-# Final Project – Special Education Support Assistant (Architecture Overview)
+# Final Project – Special Education Support Assistant  
+## Architecture Overview (Bootcamp MVP)
 
 This folder documents the architectural design of my final project developed during the MLOps & LLMOps Bootcamp.
 
-Implementation details and code are maintained in a private repository.
+Implementation details and source code are maintained in a private repository.
 
-## Objective
+---
+
+## 🎯 Objective
+
 Design a safety-aware, modular support assistant system that provides structured, non-clinical recommendations for special education contexts.
 
-## Architecture
+The focus of this MVP was not model complexity, but system design thinking and production-oriented architecture.
+
+---
+
+## 🏗 Architecture
 
 ```mermaid
 flowchart LR
