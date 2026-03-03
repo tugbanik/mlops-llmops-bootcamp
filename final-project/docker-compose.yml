@@ -1,9 +1,0 @@
-services:
-  api:
-    build: .
-    ports:
-      - "8000:8000"
-    environment:
-      - DB_PATH=/app/data/app.db
-    volumes:
-      - ./data:/app/data
