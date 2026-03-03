@@ -100,6 +100,21 @@ Dockerized deployment with Docker Compose
 
 Operational validation via screenshots
 
+---
+
+## 🚀 Final Project – Bootcamp MVP
+
+**Special Education Support Assistant**
+
+A safety-aware, modular support assistant system designed with a production-oriented architecture mindset.
+
+This public repository shares only the architectural overview.
+
+👉 Architecture Showcase:  
+[View Final Project Architecture](./final-project-showcase)
+
+---
+
 ## Technology Stack
 
 Python
